@@ -103,6 +103,7 @@ body {
 .hero-card,
 .hero-main-card {
   flex-direction: column;
+  outline: 1px solid coral;
 }
 
 .hero-card {
@@ -129,4 +130,65 @@ body {
 .hero-main-title {
   margin: 0;
   margin-bottom: 15px;
+}
+
+/* ABOUT */
+
+
+
+/* SERVICES */
+.services-wrapper {
+  flex-wrap: wrap;
+}
+
+.services-card {
+  width: 48%;
+  background-color: #fff;
+  border-radius: 15px;
+  outline: 1px solid coral;
+}
+
+.services-card:not(:nth-child(2n)) {
+  margin-right: 24px;
+}
+
+.services-card:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 24px;
+}
+
+.services-card-img {
+  border-radius: 15px 15px 0 0;
+}
+
+.services-card-wrapper {
+  padding: 26px 45px 35px;
+}
+
+.services-card-title {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.services-card-descr {
+  margin: 0;
+}
+
+/* BENEFITS */
+.benefits-wrapper {
+  flex-wrap: wrap;
+}
+
+.benefits-card {
+  width: 268px;
+  height: 268px;
+  background-color: white;
+  outline: 1px solid coral;
+}
+
+.benefits-card:not(:nth-child(4n + 4)) {
+  margin-right: 22px;
+}
+
+.benefits-card:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 22px;
 }

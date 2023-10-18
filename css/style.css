@@ -17,10 +17,49 @@ img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Light"), url("../fonts/MullerLight.woff2") format("woff2"),
+    url("../fonts/MullerLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Regular"),
+    url("../fonts/MullerRegular.woff2") format("woff2"),
+    url("../fonts/MullerRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Medium"),
+    url("../fonts/MullerMedium.woff2") format("woff2"),
+    url("../fonts/MullerMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: local("Muller-Bold"), url("../fonts/MullerBold.woff2") format("woff2"),
+    url("../fonts/MullerBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   min-width: 1200px;
-  font-family: "font", sans-serif;
-  background-color: #F1F1F1;
+  font-family: "Muller", sans-serif;
+  font-weight: 400;
+  background-color: #f1f1f1;
 }
 
 /* GLOBAL */
@@ -53,6 +92,9 @@ body {
   margin: 0;
   margin-bottom: 20px;
   padding-left: 40px;
+  color: #333;
+  font-size: 40px;
+  font-weight: 400;
 }
 
 .section-offset {
@@ -74,6 +116,22 @@ body {
   margin-right: 40px;
 }
 
+.header-contact {
+  color: #666;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.header-account-link {
+  color: #c93;
+  font-size: 16px;
+  background-image: url("../img/account-arrow.svg");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 29px;
+}
+
 .header-bottom {
   align-items: center;
   justify-content: space-between;
@@ -84,6 +142,12 @@ body {
 
 .header-nav-item:not(:last-child) {
   margin-right: 45px;
+}
+
+.header-nav-link {
+  color: #666;
+  font-size: 16px;
+  font-style: normal;
 }
 
 .header-btn:not(:last-child) {
@@ -103,11 +167,35 @@ body {
 .hero-card,
 .hero-main-card {
   flex-direction: column;
-  outline: 1px solid coral;
+  align-items: flex-start;
+  border-radius: 15px;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-card {
-  padding: 40px 45px;
+  padding: 40px 108px 40px 45px;
+  /* height: 50%; */
+}
+
+.hero-card-1 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(48, 64, 89, 0.84) -2.9%,
+      rgba(53, 65, 83, 0) 65.7%
+    ),
+    url("../img/hero/hero-1.jpg");
+}
+
+.hero-card-2 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(48, 64, 89, 0.84) -2.9%,
+      rgba(53, 65, 83, 0) 65.7%
+    ),
+    url("../img/hero/hero-2.jpg");
 }
 
 .hero-card:not(:last-child) {
@@ -117,24 +205,51 @@ body {
 .hero-card-title {
   margin: 0;
   margin-bottom: 15px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 .hero-card-price {
   margin-bottom: 47px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.hero-link {
+  color: #f0bf5f;
+  font-size: 16px;
+  background-image: url("../img/arrow-icon.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 11px 11px;
+  padding-right: 11px;
 }
 
 .hero-main-card {
-  padding: 212px 45px 40px;
+  height: 100%;
+  padding: 212px 229px 40px 45px;
+  background-image: linear-gradient(
+      90deg,
+      rgba(48, 64, 89, 0.84) -2.9%,
+      rgba(53, 65, 83, 0) 65.7%
+    ),
+    url("../img/hero/hero-3.jpg");
+}
+
+.hero-main-card .hero-card-price {
+  font-size: 30px;
 }
 
 .hero-main-title {
   margin: 0;
   margin-bottom: 15px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
 }
 
 /* ABOUT */
-
-
 
 /* SERVICES */
 .services-wrapper {

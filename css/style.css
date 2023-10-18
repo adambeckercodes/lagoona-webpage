@@ -250,6 +250,12 @@ body {
 }
 
 /* ABOUT */
+.about-descr {
+  max-width: 888px;
+  color: #000;
+  font-size: 16px;
+  line-height: 200%;
+}
 
 /* SERVICES */
 .services-wrapper {
@@ -257,10 +263,9 @@ body {
 }
 
 .services-card {
-  width: 48%;
+  max-width: 558px;
   background-color: #fff;
   border-radius: 15px;
-  outline: 1px solid coral;
 }
 
 .services-card:not(:nth-child(2n)) {
@@ -282,10 +287,23 @@ body {
 .services-card-title {
   margin: 0;
   margin-bottom: 5px;
+  padding-right: 22px;
+  color: #c93;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 200%;
+  background-image: url("../img/arrow-dark.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 22px 22px;
 }
 
 .services-card-descr {
+  max-width: 402px;
   margin: 0;
+  color: #000;
+  font-size: 16px;
+  line-height: 200%;
 }
 
 /* BENEFITS */
@@ -299,7 +317,6 @@ body {
   padding: 116px 45px 32px;
   background-color: white;
   border-radius: 15px;
-  outline: 1px solid coral;
 }
 
 .benefits-card:not(:nth-child(4n + 4)) {
@@ -308,6 +325,11 @@ body {
 
 .benefits-card:not(:nth-last-child(-n + 4)) {
   margin-bottom: 22px;
+}
+
+.benefits-text {
+  margin: 0;
+  background-position: ;
 }
 
 /* HOTELS */

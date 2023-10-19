@@ -314,7 +314,7 @@ body {
 .benefits-card {
   width: 268px;
   height: 268px;
-  padding: 116px 45px 32px;
+  padding: 40px 40px 32px;
   background-color: white;
   border-radius: 15px;
 }
@@ -327,9 +327,15 @@ body {
   margin-bottom: 22px;
 }
 
+.benefits-card svg {
+  margin-bottom: 10px;
+}
+
 .benefits-text {
   margin: 0;
-  background-position: ;
+  color: #000;
+  font-size: 16px;
+  line-height: 200%;
 }
 
 /* HOTELS */

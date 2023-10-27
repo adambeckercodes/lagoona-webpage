@@ -1282,6 +1282,51 @@
         </div>
       </div>
     </section>
+
+    <section class="tours section-offset">
+      <div class="container tours-container">
+        <h2 class="section-title tours-title">
+          Хочу тур
+        </h2>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form flex">
+          <div class="form-item">
+            <label for="city">Город вылета</label>
+            <select name="city" id="city">
+              <option value="Санкт-Петербург" selected>Санкт-Петербург</option>
+              <option value="Алматы">Алматы</option>
+              <option value="Берлин">Берлин</option>
+              <option value="Париж">Париж</option>
+              <option value="Нью-Йорк">Нью-Йорк</option>
+            </select>
+          </div>
+          <div class="form-item">
+            <label for="country">Страна</label>
+            <select name="country" id="country">
+              <option value="Австралия" selected>Австралия</option>
+              <option value="Мексика">Мексика</option>
+              <option value="Израиль">Израиль</option>
+              <option value="Сингапур">Сингапур</option>
+              <option value="Казахстан">Казахстан</option>
+            </select>
+          </div>
+          <div class="form-item">
+            <label for="date">Дата прибытия</label>
+            <input type="date" name="date" id="date" value="2021-10-18" min="2021-01-01" max="2024-12-31">
+          </div>
+          <div class="form-item">
+            <label for="nights">Ночей</label>
+            <input type="number" name="nights" id="nights" value="6">
+          </div>
+          <div class="form-item">
+            <label for="people">Туристы</label>
+            <input type="number" name="people" id="people" value="2">
+          </div>
+          <button class="btn btn-reset form-btn">
+            Найти
+          </button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
